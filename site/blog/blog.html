@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/jpeg" href="../../assets/icondevfat.jpeg" />
+    <link rel="stylesheet" href="../base.css" />
+    <link rel="stylesheet" href="blog.css" />
+    <title>Blog</title>
+  </head>
+  <body onload="blogunload()">
+    <div class="borda1"></div>
+    <div class="pagina">
+      <nav class="barra-navegacao">
+        <div class="item-navegacao">
+          <a href="../perfil/perfil.html">Perfil</a>
+        </div>
+        <div class="item-navegacao"><a href="blog.html">Blog</a></div>
+        <div class="item-navegacao"><a href="#">Jogos</a></div>
+        <div class="item-navegacao">
+          <a href="../contato/contato.html">Contato</a>
+        </div>
+        <div class="item-navegacao">
+          <a href="../sobre-nos/sobre-nos.html">Sobre nós</a>
+        </div>
+
+        <div class="area-sessao">
+          <button onclick="logOut()" id="botao-sair">Sair</button>
+        </div>
+      </nav>
+
+      <div class="conteudo-blog">
+        <div class="cabecalho-blog">
+          <h1>Sobre mim</h1>
+          <div>
+            <button onclick="publicar()" class="botao-publicar">
+              Publicar
+            </button>
+          </div>
+        </div>
+
+        <div class="areablog">
+          <textarea
+            id="texto-blog"
+            placeholder="Escreva sobre você..."
+          ></textarea>
+
+          <div class="imageblogback">
+            <div class="blogimage">
+              <img
+                id="fotoPerfil11"
+                src="../../assets/fundo.jpg"
+                alt="Foto 1"
+              />
+              <input
+                type="file"
+                id="inputFoto"
+                accept="image/*"
+                onchange="
+                  salvarEExibirFoto(this, 'fotoPerfil11', 'salva_foto1')
+                "
+              />
+              <label for="inputFoto" class="btn-upload"
+                >Coloque uma imagem</label
+              >
+
+              <img
+                id="fotoPerfil10"
+                src="../../assets/fundo.jpg"
+                alt="Foto 2"
+              />
+              <input
+                type="file"
+                id="inputFoto1"
+                accept="image/*"
+                onchange="
+                  salvarEExibirFoto(this, 'fotoPerfil10', 'salva_foto2')
+                "
+              />
+              <label for="inputFoto1" class="btn-upload"
+                >Coloque uma imagem</label
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="borda2"></div>
+    <script src="../../script.js"></script>
+  </body>
+</html>

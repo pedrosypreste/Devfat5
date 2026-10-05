@@ -1,0 +1,28 @@
+.painel-sobre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 30px;
+  background: linear-gradient(135deg, #ff0000 0%, #0022ff 100%);
+  border: 6px double #ffffff;
+  color: #def151;
+  margin-top: 10px;
+  width: min(800px, 95%);
+  min-height: 600px;
+}
+
+.texto-sobre {
+  margin: 30px;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+}
+
+.grupotitulo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

@@ -1,0 +1,92 @@
+.painel-perfil {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #a37fca 0%, #25e6fc 100%);
+  border: 6px double #ffffff;
+  color: #b30092;
+  width: min(800px, 95%);
+  height: 600px;
+  margin-top: 10px;
+}
+
+.conteudo-perfil {
+  display: flex;
+  align-items: center;
+  row-gap: 10px;
+}
+
+.imagem-perfil {
+  height: 200px;
+  width: 200px;
+}
+
+#campo-biografia {
+  background: linear-gradient(135deg, #a37fca 0%, #25e6fc 100%);
+  color: #560078;
+  width: 200px;
+  height: 40px;
+  margin-top: 10px;
+}
+
+.botao-biografia {
+  display: flex;
+  width: 200px;
+  height: 50px;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  background-color: #bb00ff;
+  color: #ffffff;
+  font-family: inherit;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+#fotoPerfil {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.foto-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 40px;
+}
+
+#inputFoto {
+  display: none;
+}
+
+.btn-upload {
+  display: flex;
+  background-color: rgba(25, 0, 255, 0.43);
+  border-radius: 10px;
+  width: 200px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.conteudo-perfil {
+  display: flex;
+  flex-direction: column;
+}
+
+.painel-perfil {
+  display: flex;
+  gap: 150px;
+}
+
+.biostatus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 35px;
+}

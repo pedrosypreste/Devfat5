@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/jpeg" href="../../assets/icondevfat.jpeg" />
+    <link rel="stylesheet" href="../base.css" />
+    <link rel="stylesheet" href="perfil.css" />
+    <title>Perfil</title>
+  </head>
+  <body onload="bionload()">
+    <div class="borda1"></div>
+    <div class="pagina">
+      <nav class="barra-navegacao">
+        <div class="item-navegacao"><a href="perfil.html">Perfil</a></div>
+        <div class="item-navegacao"><a href="../blog/blog.html">Blog</a></div>
+        <div class="item-navegacao"><a href="#">Jogos</a></div>
+        <div class="item-navegacao"><a href="../contato/contato.html">Contato</a></div>
+        <div class="item-navegacao"><a href="../sobre-nos/sobre-nos.html">Sobre nós</a></div>
+
+        <div class="area-sessao">
+          <button onclick="logOut()" id="botao-sair">Sair</button>
+        </div>
+      </nav>
+
+      <div class="painel-perfil">
+        <div class="conteudo-perfil">
+          <h1 id="nome-perfil"></h1>
+          <div class="foto-container">
+  <img id="fotoPerfil" src="../funco.jpg" alt="." />
+
+  <input
+    type="file"
+    id="inputFoto"
+    accept="image/*"
+    style="display: none;"
+    onchange="salvarEExibirFoto(this, 'fotoPerfil', 'fotoperfil')"
+  />
+  <label for="inputFoto" class="btn-upload"> Alterar Foto </label>
+
+  <div class="idadgen">
+    <p id="idade"></p>
+    <p id="genero"></p>
+  </div>
+</div>
+        </div>
+
+        <div class="biostatus">
+          <p>Biografia</p>
+          <input type="text" id="campo-biografia" />
+          <button onclick="publicarbio()" class="botao-biografia">
+            Publicar
+          </button>
+
+          <h2>Status</h2>
+          <div class="status">
+            <input 
+              type="radio" 
+              id="opcao1" 
+              name="meu-grupo" 
+              value="desocupado" 
+              onchange="salvarStatus('desocupado')" 
+            />
+            <label for="opcao1">desocupado</label>
+
+            <input 
+              type="radio" 
+              id="opcao2" 
+              name="meu-grupo" 
+              value="ocupado" 
+              onchange="salvarStatus('ocupado')" 
+            />
+            <label for="opcao2">ocupado</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="borda2"></div>
+    <script src="../../script.js"></script>
+  </body>
+</html>

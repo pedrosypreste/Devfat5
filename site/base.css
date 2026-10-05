@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: row;
+  font-family: "Audiowide", "Trebuchet MS", sans-serif;
+  background-image: url("../assets/fundo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.borda1,
+.borda2 {
+  width: 200px;
+  height: 100vh;
+  flex: 0 0 200px;
+  background-color: rgb(0, 0, 0);
+}
+
+.pagina {
+  min-height: 100vh;
+  flex: 1;
+  min-width: 0;
+  width: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.barra-navegacao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: min(800px, 95%);
+}
+
+.item-navegacao,
+#botao-sair {
+  display: flex;
+  width: 200px;
+  height: 50px;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  background-color: #ff4fd8;
+  color: #ffffff;
+  font-family: inherit;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-navegacao a {
+  color: #ffffff;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.area-sessao {
+  display: flex;
+}

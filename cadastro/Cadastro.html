@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/jpeg" href="../assets/icondevfat.jpeg" />
+    <link rel="stylesheet" href="Cadastro.css" />
+    <title>Cadastro</title>
+  </head>
+  <body>
+    <div class="borda1"></div>
+    <div class="pagina-autenticacao">
+      <div class="painel-autenticacao">
+        <div class="titulo-autenticacao">
+          <h1>Cadastro</h1>
+        </div>
+
+        <input type="email" name="" id="email-cadastro" placeholder="Email" />
+
+        <input
+          type="password"
+          name=""
+          id="senha-cadastro"
+          placeholder="Sua Senha"
+        />
+
+        <input
+          type="password"
+          name=""
+          id="confirmacao-senha"
+          placeholder="Confirme sua Senha"
+        />
+
+        <input type="text" name="" id="apelido" placeholder="Seu apelido" />
+
+        <input type="text" name="" id="idade" placeholder="Sua idade" />
+
+        <select name="genero" id="genero">
+          <option value="" selected disabled>Escolha seu gênero</option>
+          <option value="masculino">Masculino</option>
+          <option value="feminino">Feminino</option>
+          <option value="nao-binario">Não binário</option>
+        </select>
+        <div class="acoes-cadastro">
+          <button id="botao-cadastro" onclick="cadastro()">
+            Enviar cadastro
+          </button>
+
+          <p id="mensagem-erro"></p>
+          <div class="link-login">
+            <a href="../login/LogIn.html">Log In</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="borda2"></div>
+    <script src="../script.js"></script>
+  </body>
+</html>

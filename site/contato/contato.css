@@ -1,0 +1,13 @@
+.painel-contato {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 30px;
+  background: linear-gradient(135deg, #0088ff 0%, #cfef41 100%);
+  border: 6px double #ffffff;
+  color: #ff0000;
+  margin-top: 10px;
+  width: min(800px, 95%);
+  min-height: 600px;
+}

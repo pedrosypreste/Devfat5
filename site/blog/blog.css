@@ -1,0 +1,94 @@
+.conteudo-blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min(800px, 95%);
+}
+
+.cabecalho-blog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 30px;
+  background: linear-gradient(135deg, #78fcab 0%, #ff84ed 100%);
+  border: 6px double #ffffff;
+  color: #5154f1;
+  margin-top: 10px;
+  width: 100%;
+}
+
+#texto-blog {
+  background: linear-gradient(135deg, #78fcab 0%, #ff84ed 100%);
+  border: 6px double #ffffff;
+  color: #5154f1;
+  width: 550px;
+  height: 500px;
+  resize: vertical;
+}
+
+@media (max-width: 650px) {
+  #texto-blog {
+    height: 400px;
+  }
+}
+
+.botao-publicar {
+  display: flex;
+  width: 200px;
+  height: 50px;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  background-color: #5154f1;
+  color: #ffffff;
+  font-family: inherit;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.areablog {
+  display: flex;
+  justify-content: flex-start;
+  width: 1000px;
+  margin-left: 200px;
+}
+
+.logimage {
+  display: flex;
+  flex-direction: column;
+}
+
+#fotoPerfil10 {
+  width: 200px;
+  height: 200px;
+}
+
+#fotoPerfil11 {
+  width: 200px;
+  height: 200px;
+}
+
+.blogimage {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  color: blue;
+  text-align: center;
+  align-items: center;
+}
+
+.imageblogback {
+  width: 250px;
+  height: 500px;
+  background: linear-gradient(135deg, #78fcab 0%, #ff84ed 100%);
+  border: 6px double white;
+}
+
+#inputFoto {
+  display: none;
+}
+
+#inputFoto1 {
+  display: none;
+}
